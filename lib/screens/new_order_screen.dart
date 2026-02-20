@@ -120,12 +120,12 @@ class _NewOrderScreenState extends State<NewOrderScreen> {
               // Campo dropdown (lista desplegable) para seleccionar área (ÁREA)
               DropdownButtonFormField<String>(
                 // Valor actual seleccionado
-                value: _area,
+                initialValue: _area,
                 // Decoración del dropdown
                 decoration: const InputDecoration(
                   // Etiqueta del campo
                   labelText: 'Área',
-                  // Borde rectangular
+                  // Borde rectangularr
                   border: OutlineInputBorder(),
                 ),
                 // Lista de opciones disponibles para área
@@ -148,7 +148,7 @@ class _NewOrderScreenState extends State<NewOrderScreen> {
               // Campo dropdown para seleccionar prioridad (PRIORIDAD)
               DropdownButtonFormField<String>(
                 // Valor actual seleccionado para prioridad
-                value: _priority,
+                initialValue: _priority,
                 // Decoración del dropdown de prioridad
                 decoration: const InputDecoration(
                   // Etiqueta del campo prioridad
